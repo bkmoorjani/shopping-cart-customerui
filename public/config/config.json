@@ -1,0 +1,9 @@
+{
+    "serverDetails": {
+        "shoppingCartApiPrefix":"https://shopping-cart-firstapp.herokuapp.com",
+        "anotherServerPrefix" : "http://google.com"
+    },
+    "allowedMenus":{
+        "menus" : ["Home","ContactUs"]
+    }
+}
