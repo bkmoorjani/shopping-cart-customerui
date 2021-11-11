@@ -2,14 +2,12 @@ import { createSlice } from "@reduxjs/toolkit"
 import { RootState } from "../../app/store";
 
 
-export interface CommonState{
+export interface CommonState {
     rootConfig: any;
-
 }
 
 const initialState: CommonState = {
     rootConfig: {}
-    
 }
 
 export const commonSlice = createSlice({
@@ -17,14 +15,11 @@ export const commonSlice = createSlice({
     initialState,
     reducers: {
         setRootConfig: (state, action) => {
-            state.rootConfig=action.payload
+            state.rootConfig = action.payload
         }
     }
 })
 export const { setRootConfig } = commonSlice.actions;
-
-//RootConfig , apiPrefix
-
-export const selectShoppinCartApiPrefix = (state: RootState) => state.common.rootConfig.serverDetails.shoppingCartApiPrefix;
-
+export const selectShoppinCartApiPrefix =
+    (state: RootState) => state.common.rootConfig.serverDetails.shoppingCartApiPrefix;
 export default commonSlice;

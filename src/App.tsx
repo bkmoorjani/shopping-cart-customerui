@@ -18,6 +18,7 @@ const App = (props: AppProps) => {
   useEffect(() => {
     dispatch(setRootConfig(rootConfig))
   }, [rootConfig,dispatch]);
+
   
   useEffect(() => {
     dispatch({type:"GET_PRODUCTS"})

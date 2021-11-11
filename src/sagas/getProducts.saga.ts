@@ -1,9 +1,6 @@
 
-import axios from "axios";
-import { call, put, select, takeEvery } from 'redux-saga/effects';
+import { call, put, takeEvery } from 'redux-saga/effects';
 import { customAxios } from "..";
-
-import { selectShoppinCartApiPrefix } from "../features/common/common.slice";
 import { addProducts } from "../features/products/products.slice";
 
 function* getProducts(action: any) {
